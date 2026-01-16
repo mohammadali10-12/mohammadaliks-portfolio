@@ -1280,13 +1280,13 @@
             // REAL EMAILJS IMPLEMENTATION (Replace with your actual IDs):
             
             // Initialize EmailJS with your Public Key
-            emailjs.init("YOUR_PUBLIC_KEY");
+            emailjs.init("7TOb4lW_zdjS95SSJ");
             
             try {
                 // Send the form using EmailJS
                 const response = await emailjs.sendForm(
-                    "YOUR_SERVICE_ID",   // EmailJS Service ID
-                    "YOUR_TEMPLATE_ID",  // EmailJS Template ID
+                    "service_0ksin3d",   // EmailJS Service ID
+                    "template_8o2ic1h",  // EmailJS Template ID
                     e.target              // The form element
                 );
                 
@@ -1439,6 +1439,14 @@
             // Show custom cursor again when mouse is used
             cursor.style.display = 'block';
             cursorFollower.style.display = 'block';
+        });
+        
+        document.addEventListener('contextmenu', e => e.preventDefault());
+
+        document.addEventListener('keydown', function (e) {
+              if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && ['I','C','J'].includes(e.key))) {
+                e.preventDefault();
+              }
         });
     </script>
 </body>
