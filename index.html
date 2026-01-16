@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mohammad Ali — Developer Portfolio</title>
+  <meta name="description" content="Mohammad Ali — developer portfolio" />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#9aa4b2;color-scheme:dark}
+    *{box-sizing:border-box}
+    body{font-family:Inter,Segoe UI,system-ui,Helvetica,Arial,sans-serif;margin:0;background:linear-gradient(180deg,#081024 0%,#071228 100%);color:#e6eef6;line-height:1.5}
+    .wrap{max-width:920px;margin:48px auto;padding:28px;background:rgba(255,255,255,0.02);border-radius:12px;box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+    header{display:flex;gap:18px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin-top:8px}
+    .grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:22px}
+    @media(min-width:760px){.grid{grid-template-columns:2fr 1fr}}
+    .card{background:rgba(255,255,255,0.02);padding:16px;border-radius:10px}
+    a.button{display:inline-block;padding:10px 14px;background:var(--accent);color:#032;border-radius:8px;text-decoration:none;font-weight:600}
+    ul.projects{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+    .project{padding:12px;border-radius:8px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent)}
+    footer{margin-top:18px;color:var(--muted);font-size:14px}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div class="avatar">MA</div>
+      <div>
+        <h1>Mohammad Ali</h1>
+        <p class="lead">Full‑stack developer — building web apps, APIs & developer tools. Based in [City].</p>
+        <p style="margin-top:10px"><a class="button" href="#projects">View projects</a> <a style="margin-left:10px;color:var(--muted)" href="mailto:you@example.com">you@example.com</a></p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section class="card">
+        <h2 id="projects">Selected projects</h2>
+        <ul class="projects">
+          <li class="project">
+            <strong>Project One</strong> — Short description. <a href="https://github.com/your/repo" target="_blank">Source</a>
+          </li>
+          <li class="project">
+            <strong>Project Two</strong> — Short description. <a href="https://example.com" target="_blank">Demo</a>
+          </li>
+        </ul>
+
+        <h2 style="margin-top:18px">About</h2>
+        <p style="color:var(--muted)">I’m a developer focused on building reliable, maintainable web apps and APIs. I enjoy learning new tools and improving developer experience.</p>
+      </section>
+
+      <aside class="card">
+        <h3>Skills</h3>
+        <p style="color:var(--muted)">JavaScript, TypeScript, Node.js, React, Next.js, Go, PostgreSQL, Docker</p>
+
+        <h3 style="margin-top:12px">Contact</h3>
+        <p style="color:var(--muted)">Email: you@example.com<br/>GitHub: <a href="https://github.com/mohammadali10-12" target="_blank">mohammadali10-12</a></p>
+      </aside>
+    </div>
+
+    <footer>
+      © <span id="year"></span> Mohammad Ali — <a href="https://github.com/mohammadali10-12/mohammadali-sunasara" target="_blank">Source on GitHub</a>
+    </footer>
+  </main>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
